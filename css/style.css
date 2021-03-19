@@ -188,7 +188,7 @@ html {
   margin-bottom: 40px;
 }
 
-.header__top-text {
+.header__text_top {
   padding-top: 35px;
   padding-bottom: 20px;
   margin-bottom: 12px;
@@ -201,7 +201,7 @@ html {
   color: var(--color-F-dim);
 }
 
-.header__lower-text {
+.header__text_lower {
   font-weight: 300;
   font-size: 25px;
   line-height: 1.16;
@@ -226,7 +226,7 @@ html {
   height: 380px;
 }
 
-.section-first-question__image-eye {
+.section-first-question__image_eye {
   position: absolute;
   top: 0;
   left: 0;
@@ -234,7 +234,7 @@ html {
   opacity: 0.2;
 }
 
-.section-first-question__image-woman {
+.section-first-question__image_woman {
   position: relative;
   z-index: 1;
   border-radius: 50%;
@@ -244,11 +244,6 @@ html {
 .section-first-question__title {
   width: 500px;
   margin-bottom: 40px;
-}
-
-.section-first-question__text_up {
-  text-transform: uppercase;
-  line-height: 1.4;
 }
 
 /* Section-cards */
@@ -332,7 +327,7 @@ html {
   font-family: "BadScript";
 }
 
-.footer__back-image_moon {
+.footer__back-moon {
   position: absolute;
   bottom: 50px;
   left: -40px;
@@ -341,7 +336,7 @@ html {
   background-image: url("../img/main-page/footer/back-moon.svg");
 }
 
-.footer__back-image_eye {
+.footer__back-eye {
   position: absolute;
   bottom: 350px;
   right: -125px;
