@@ -87,7 +87,7 @@ img {
 }
 
 button {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
 }
 
@@ -159,6 +159,9 @@ html {
 }
 
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 35px;
   width: 310px;
   height: 70px;
