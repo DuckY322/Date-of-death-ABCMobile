@@ -116,8 +116,10 @@ html {
   --color-yellow-dark: rgba(254, 173, 53, 0.9);
   --color-green: rgba(50, 185, 73, 0.9);
   --color-green-light: rgba(76, 217, 100, 0.9);
+  --color-red-err: #EE5353;
   --anim-time: 2.5s;
   --anim-timing-function: ease-in-out;
+  --rec-line: 0;
 }
 
 .container-main {
@@ -189,7 +191,6 @@ html {
 }
 
 .select {
-  display: none;
   margin-bottom: 35px;
   width: 310px;
   height: 70px;
@@ -206,6 +207,15 @@ html {
     rgba(203, 203, 203, 0.9) 100%
   );
   overflow: hidden;
+}
+
+.select_err {
+  border: 1px solid var(--color-red-err);
+}
+
+.option {
+  border-radius: 50px;
+  color: var(--color-2024);
 }
 
 .btn-gradient {

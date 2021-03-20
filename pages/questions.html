@@ -14,11 +14,10 @@
     <div class="container-main">
       <header class="header">
         <div class="container header__container">
-          <p class="header__text">
-            Мы расскажем Вам не только подробности вашей смерти, но также
-            поможем Вам избежать этой ужасной даты и продлить вашу жизнь на
-            многие годы.
-          </p>
+          <p class="header__text"></p>
+          <div class="header__container_white off">
+            <p class="header__text_white"></p>
+          </div>
           <div class="background-image header__back-eye"></div>
         </div>
       </header>
@@ -27,37 +26,31 @@
           <div class="container section-question__container">
             <h2
               class="question-title question-title_up section-question__title"
-            >
-              Когда Вы чувствуете себя наиболее комфортно?
-            </h2>
+            ></h2>
             <div class="flex flex-col section-question__buttons">
-              <select class="select" name="" id="">
-                <option value="title">День</option>
+              <select class="select" name="day" id="">
+                <option class="option" value="Title">День</option>
               </select>
-              <select class="select" name="" id="">
-                <option value="title">Месяц</option>
+              <select class="select" name="month" id="">
+                <option class="option" value="Title">Месяц</option>
               </select>
-              <select class="select" name="" id="">
-                <option value="title">Год</option>
+              <select class="select" name="year" id="">
+                <option class="option" value="Title">Год</option>
               </select>
               <button class="btn">
                 <div class="btn-gradient"></div>
-                Утро
               </button>
               <button class="btn">
                 <div class="btn-gradient btn-gradient_second"></div>
-                День
               </button>
               <button class="btn">
                 <div class="btn-gradient btn-gradient_third"></div>
-                Вечер
               </button>
               <button class="btn">
                 <div class="btn-gradient btn-gradient_fourth"></div>
-                Ночь
               </button>
             </div>
-            <span class="footnote">Вопрос 2-5</span>
+            <span class="footnote"></span>
             <div class="background-image section-question__back-moon"></div>
           </div>
         </section>
@@ -78,9 +71,9 @@
               src="../img/questions/recording.svg"
               alt="recording__image"
             />
-            <div class="section-recording__downline"></div>
-            <span class="section-recording__downline-percent">20%</span>
-            <h2 class="section-recording__downline-title">Запись сообщения</h2>
+            <div class="section-recording__line"></div>
+            <span class="section-recording__line-percent">0%</span>
+            <h2 class="section-recording__line-title">Запись сообщения</h2>
           </div>
         </section>
         <section class="section-call off">
@@ -101,8 +94,9 @@
               ближайшем будущем.
             </span>
             <div class="section-call__event">
-              <span class="question-title question-title_up">
-                Первое значимое событие может произойти уже 14.02.2021</span
+              <span
+                class="question-title question-title_up section-call__event-text"
+              ></span
               ><span class="question-title"
                 >, Вам надо быть готовым, что бы последствия не оказались
                 необратимыми.</span
@@ -119,7 +113,7 @@
           </div>
         </section>
       </main>
-      <footer class="off">
+      <footer class="footer off">
         <div class="container footer__container">
           <span class="footer__call-text"
             >TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN
