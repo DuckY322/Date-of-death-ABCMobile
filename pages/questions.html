@@ -1,126 +1,97 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/style-questions.css" />
-    <link rel="stylesheet" href="../css/breakpoints.css" />
-    <title>Дата смерти 2021</title>
-    <script defer src="../js/index.js"></script>
-  </head>
-  <body>
-    <div class="container-main">
-      <header class="header">
-        <div class="container header__container">
-          <p class="header__text"></p>
-          <div class="header__container_white off">
-            <p class="header__text_white"></p>
-          </div>
-          <div class="background-image header__back-eye"></div>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="../css/style-questions.css"/>
+        <link rel="stylesheet" href="../css/breakpoints.css"/>
+        <title>Дата смерти 2021</title>
+        <script defer src="../js/index.js"></script>
+    </head>
+    <body>
+        <div class="container-main">
+            <header class="header">
+                <div class="container header__container">
+                    <p class="header__text"></p>
+                    <div class="header__container_white off">
+                        <p class="header__text_white"></p>
+                    </div>
+                    <div class="background-image header__back-eye"></div>
+                </div>
+            </header>
+            <main>
+                <section class="section-question">
+                    <div class="container section-question__container">
+                        <h2 class="question-title question-title_up section-question__title"></h2>
+                        <div class="flex flex-col section-question__buttons">
+                            <select class="select" name="day" id="">
+                                <option class="option" value="Title">День</option>
+                            </select>
+                            <select class="select" name="month" id="">
+                                <option class="option" value="Title">Месяц</option>
+                            </select>
+                            <select class="select" name="year" id="">
+                                <option class="option" value="Title">Год</option>
+                            </select>
+                            <button class="btn">
+                                <div class="btn-gradient"></div>
+                            </button>
+                            <button class="btn">
+                                <div class="btn-gradient btn-gradient_second"></div>
+                            </button>
+                            <button class="btn">
+                                <div class="btn-gradient btn-gradient_third"></div>
+                            </button>
+                            <button class="btn">
+                                <div class="btn-gradient btn-gradient_fourth"></div>
+                            </button>
+                        </div>
+                        <span class="footnote"></span>
+                        <div class="background-image section-question__back-moon"></div>
+                    </div>
+                </section>
+                <section class="section-loading off">
+                    <div class="container section-loading__container">
+                        <img class="section-loading__image" src="../img/questions/loading.svg" alt="loading"/>
+                        <h2 class="section-loading__title">Loading</h2>
+                    </div>
+                </section>
+                <section class="section-recording off">
+                    <div class="container section-recording__container">
+                        <img class="section-recording__image" src="../img/questions/recording.svg" alt="recording__image"/>
+                        <div class="section-recording__line"></div>
+                        <span class="section-recording__line-percent">0%</span>
+                        <h2 class="section-recording__line-title">Запись сообщения</h2>
+                    </div>
+                </section>
+                <section class="section-call off">
+                    <div class="container section-call__container">
+                        <div class="flex flex-col section-call__thank">
+                            <p class="section-call__thank-text">
+                                Спасибо за Ваши ответы!<br/>
+                                <span class="section-call__thank-text section-call__thank-text_up">Мы подготовили для вас персональную аудио запись с вашим прогнозом.</span>
+                            </p>
+                        </div>
+                        <span class="section-call__expect">Вы можете узнать, как повлиять на события, которые ожидают вас в ближайшем будущем.</span>
+                        <div class="section-call__event">
+                            <span class="question-title question-title_up section-call__event-text"></span>
+                            <span class="question-title">, Вам надо быть готовым, что бы последствия не оказались необратимыми.</span>
+                        </div>
+                        <span class="section-call__do">Нажмите на кнопку ниже прямо сейчас и наберите наш номер телефона. Прослушайте важную информацию!</span>
+                        <a class="btn section-call__btn" href="tel:+77777777777">
+                            <div class="btn-gradient btn-gradient_call"></div>
+                            Позвонить и прослушать
+                        </a>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer off">
+                <div class="container footer__container">
+                    <span class="footer__call-text">TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN FOLOSIREA LUI DECLARATI CA AVETI 18 ANI IMPLINITI</span>
+                </div>
+            </footer>
         </div>
-      </header>
-      <main>
-        <section class="section-question">
-          <div class="container section-question__container">
-            <h2
-              class="question-title question-title_up section-question__title"
-            ></h2>
-            <div class="flex flex-col section-question__buttons">
-              <select class="select" name="day" id="">
-                <option class="option" value="Title">День</option>
-              </select>
-              <select class="select" name="month" id="">
-                <option class="option" value="Title">Месяц</option>
-              </select>
-              <select class="select" name="year" id="">
-                <option class="option" value="Title">Год</option>
-              </select>
-              <button class="btn">
-                <div class="btn-gradient"></div>
-              </button>
-              <button class="btn">
-                <div class="btn-gradient btn-gradient_second"></div>
-              </button>
-              <button class="btn">
-                <div class="btn-gradient btn-gradient_third"></div>
-              </button>
-              <button class="btn">
-                <div class="btn-gradient btn-gradient_fourth"></div>
-              </button>
-            </div>
-            <span class="footnote"></span>
-            <div class="background-image section-question__back-moon"></div>
-          </div>
-        </section>
-        <section class="section-loading off">
-          <div class="container section-loading__container">
-            <img
-              class="section-loading__image"
-              src="../img/questions/loading.svg"
-              alt="loading"
-            />
-            <h2 class="section-loading__title">Loading</h2>
-          </div>
-        </section>
-        <section class="section-recording off">
-          <div class="container section-recording__container">
-            <img
-              class="section-recording__image"
-              src="../img/questions/recording.svg"
-              alt="recording__image"
-            />
-            <div class="section-recording__line"></div>
-            <span class="section-recording__line-percent">0%</span>
-            <h2 class="section-recording__line-title">Запись сообщения</h2>
-          </div>
-        </section>
-        <section class="section-call off">
-          <div class="container section-call__container">
-            <div class="flex flex-col section-call__thank">
-              <p class="section-call__thank-text">
-                Спасибо за Ваши ответы! <br />
-                <span
-                  class="section-call__thank-text section-call__thank-text_up"
-                >
-                  Мы подготовили для вас персональную аудио запись с вашим
-                  прогнозом.</span
-                >
-              </p>
-            </div>
-            <span class="section-call__expect"
-              >Вы можете узнать, как повлиять на события, которые ожидают вас в
-              ближайшем будущем.
-            </span>
-            <div class="section-call__event">
-              <span
-                class="question-title question-title_up section-call__event-text"
-              ></span
-              ><span class="question-title"
-                >, Вам надо быть готовым, что бы последствия не оказались
-                необратимыми.</span
-              >
-            </div>
-            <span class="section-call__do"
-              >Нажмите на кнопку ниже прямо сейчас и наберите наш номер
-              телефона. Прослушайте важную информацию!</span
-            >
-            <a class="btn section-call__btn" href="tel:+77777777777">
-              <div class="btn-gradient btn-gradient_call"></div>
-              Позвонить и прослушать</a
-            >
-          </div>
-        </section>
-      </main>
-      <footer class="footer off">
-        <div class="container footer__container">
-          <span class="footer__call-text"
-            >TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN
-            FOLOSIREA LUI DECLARATI CA AVETI 18 ANI IMPLINITI,
-          </span>
-        </div>
-      </footer>
-    </div>
-  </body>
+    </body>
 </html>

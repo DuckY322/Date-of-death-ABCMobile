@@ -20,6 +20,7 @@
 .header__container_white::after {
   content: "";
   position: absolute;
+  z-index: -1;
   right: 33px;
   bottom: -35px;
   border: 15px solid transparent;
