@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="../css/style-questions.css" />
     <link rel="stylesheet" href="../css/breakpoints.css" />
     <title>Дата смерти 2021</title>
-    <script defer src="js/index.js"></script>
+    <script defer src="../js/index.js"></script>
   </head>
   <body>
     <div class="container-main">
-      <header>
+      <header class="header">
         <div class="container header__container">
           <p class="header__text">
             Мы расскажем Вам не только подробности вашей смерти, но также
@@ -31,16 +31,102 @@
               Когда Вы чувствуете себя наиболее комфортно?
             </h2>
             <div class="flex flex-col section-question__buttons">
-              <a href="" class="btn">Утро</a>
-              <a href="" class="btn">День</a>
-              <a href="" class="btn">Вечер</a>
-              <a href="" class="btn">Ночь</a>
+              <select class="select" name="" id="">
+                <option value="title">День</option>
+              </select>
+              <select class="select" name="" id="">
+                <option value="title">Месяц</option>
+              </select>
+              <select class="select" name="" id="">
+                <option value="title">Год</option>
+              </select>
+              <button class="btn">
+                <div class="btn-gradient"></div>
+                Утро
+              </button>
+              <button class="btn">
+                <div class="btn-gradient btn-gradient_second"></div>
+                День
+              </button>
+              <button class="btn">
+                <div class="btn-gradient btn-gradient_third"></div>
+                Вечер
+              </button>
+              <button class="btn">
+                <div class="btn-gradient btn-gradient_fourth"></div>
+                Ночь
+              </button>
             </div>
             <span class="footnote">Вопрос 2-5</span>
             <div class="background-image section-question__back-moon"></div>
           </div>
         </section>
+        <section class="section-loading off">
+          <div class="container section-loading__container">
+            <img
+              class="section-loading__image"
+              src="../img/questions/loading.svg"
+              alt="loading"
+            />
+            <h2 class="section-loading__title">Loading</h2>
+          </div>
+        </section>
+        <section class="section-recording off">
+          <div class="container section-recording__container">
+            <img
+              class="section-recording__image"
+              src="../img/questions/recording.svg"
+              alt="recording__image"
+            />
+            <div class="section-recording__downline"></div>
+            <span class="section-recording__downline-percent">20%</span>
+            <h2 class="section-recording__downline-title">Запись сообщения</h2>
+          </div>
+        </section>
+        <section class="section-call off">
+          <div class="container section-call__container">
+            <div class="flex flex-col section-call__thank">
+              <p class="section-call__thank-text">
+                Спасибо за Ваши ответы! <br />
+                <span
+                  class="section-call__thank-text section-call__thank-text_up"
+                >
+                  Мы подготовили для вас персональную аудио запись с вашим
+                  прогнозом.</span
+                >
+              </p>
+            </div>
+            <span class="section-call__expect"
+              >Вы можете узнать, как повлиять на события, которые ожидают вас в
+              ближайшем будущем.
+            </span>
+            <div class="section-call__event">
+              <span class="question-title question-title_up">
+                Первое значимое событие может произойти уже 14.02.2021</span
+              ><span class="question-title"
+                >, Вам надо быть готовым, что бы последствия не оказались
+                необратимыми.</span
+              >
+            </div>
+            <span class="section-call__do"
+              >Нажмите на кнопку ниже прямо сейчас и наберите наш номер
+              телефона. Прослушайте важную информацию!</span
+            >
+            <a class="btn section-call__btn" href="tel:+77777777777">
+              <div class="btn-gradient btn-gradient_call"></div>
+              Позвонить и прослушать</a
+            >
+          </div>
+        </section>
       </main>
+      <footer class="off">
+        <div class="container footer__container">
+          <span class="footer__call-text"
+            >TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN
+            FOLOSIREA LUI DECLARATI CA AVETI 18 ANI IMPLINITI,
+          </span>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

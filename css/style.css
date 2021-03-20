@@ -71,6 +71,12 @@
   outline-offset: 0;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -102,13 +108,16 @@ html {
 :root {
   --color-F-ultraDim: rgba(255, 255, 255, 0.2);
   --color-F-dim: rgba(255, 255, 255, 0.6);
+  --color-gray: #9d9d9d;
   --color-F: #fff;
   --color-2024: #202024;
   --color-yellow-light: rgba(246, 200, 102, 0.9);
   --color-yellow: #f6c866;
   --color-yellow-dark: rgba(254, 173, 53, 0.9);
-  /* --anim-time: 0.2s;
-    --anim-timing-function: ease-in-out; */
+  --color-green: rgba(50, 185, 73, 0.9);
+  --color-green-light: rgba(76, 217, 100, 0.9);
+  --anim-time: 2.5s;
+  --anim-timing-function: ease-in-out;
 }
 
 .container-main {
@@ -159,6 +168,7 @@ html {
 }
 
 .btn {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,13 +178,122 @@ html {
   border: none;
   border-radius: 50px;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--color-F);
   background: linear-gradient(
     90deg,
     var(--color-yellow-light) -6.2%,
     var(--color-yellow-dark) 100%
   );
+  overflow: hidden;
+}
+
+.select {
+  display: none;
+  margin-bottom: 35px;
+  width: 310px;
+  height: 70px;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-2024);
+  text-align: center;
+  text-align-last: center;
+  background: linear-gradient(
+    90deg,
+    rgba(228, 228, 228, 0.9) -6.2%,
+    rgba(203, 203, 203, 0.9) 100%
+  );
+  overflow: hidden;
+}
+
+.btn-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 155px;
+  height: 100%;
+  background: linear-gradient(
+    248.67deg,
+    rgba(255, 255, 255, 0) 30.84%,
+    rgba(255, 255, 255, 0.29) 46.06%,
+    rgba(255, 255, 255, 0) 64.04%
+  );
+  animation-name: btn-gradient-anim;
+  animation-duration: var(--anim-time);
+  animation-timing-function: var(--anim-timing-function);
+  animation-iteration-count: infinite;
+}
+
+.btn-gradient_second {
+  animation-name: btn-gradient-anim, btn-gradient-anim_second;
+}
+
+.btn-gradient_third {
+  animation-name: btn-gradient-anim_three;
+}
+
+.btn-gradient_fourth {
+  animation-name: btn-gradient-anim_four;
+}
+
+.btn-gradient_call {
+  animation-name: btn-gradient-anim_call;
+}
+
+@keyframes btn-gradient-anim {
+  0% {
+    left: -75px;
+    opacity: 0;
+  }
+  100% {
+    left: 310px;
+    opacity: 1;
+  }
+}
+
+@keyframes btn-gradient-anim_second {
+  0% {
+    left: -45px;
+  }
+  100% {
+    left: 310px;
+    opacity: 1;
+  }
+}
+
+@keyframes btn-gradient-anim_three {
+  0% {
+    left: -15px;
+    opacity: 0;
+  }
+  100% {
+    left: 310px;
+    opacity: 1;
+  }
+}
+
+@keyframes btn-gradient-anim_four {
+  0% {
+    left: 15px;
+    opacity: 0;
+  }
+  100% {
+    left: 310px;
+    opacity: 1;
+  }
+}
+
+@keyframes btn-gradient-anim_call {
+  0% {
+    left: -75px;
+    opacity: 0;
+  }
+  100% {
+    left: 400px;
+    opacity: 1;
+  }
 }
 
 .footnote {
@@ -183,6 +302,10 @@ html {
   line-height: 1.2;
   letter-spacing: 0.1em;
   color: var(--color-F-dim);
+}
+
+.off {
+  display: none;
 }
 
 /* Header */
