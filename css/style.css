@@ -1,64 +1,55 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Light.woff2") format("woff2"),
-    url("../fonts/Roboto-Light.woff") format("woff"),
-    url("../fonts/Roboto-Light.ttf") format("ttf");
-  font-display: swap;
-  font-weight: 300;
-  font-style: normal;
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.ttf") format("ttf");
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
-    url("../fonts/Roboto-Regular.woff") format("woff"),
-    url("../fonts/Roboto-Regular.ttf") format("ttf");
-  font-display: swap;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("ttf");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
-    url("../fonts/Roboto-Medium.woff") format("woff"),
-    url("../fonts/Roboto-Medium.ttf") format("ttf");
-  font-display: swap;
-  font-weight: 500;
-  font-style: normal;
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("ttf");
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
-    url("../fonts/Roboto-Bold.woff") format("woff"),
-    url("../fonts/Roboto-Bold.ttf") format("ttf");
-  font-display: swap;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("ttf");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal
 }
 
 @font-face {
-  font-family: "BadScript";
-  src: url("../fonts/BadScript-Regular.woff2") format("woff2"),
-    url("../fonts/BadScript-Regular.woff") format("woff"),
-    url("../fonts/BadScript-Regular.ttf") format("ttf");
-  font-display: swap;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "BadScript";
+    src: url("../fonts/BadScript-Regular.woff2") format("woff2"), url("../fonts/BadScript-Regular.woff") format("woff"), url("../fonts/BadScript-Regular.ttf") format("ttf");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal
 }
+
 
 /*Global css*/
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-size: 25px;
-  line-height: 100%;
-  font-weight: 400;
-  text-align: center;
-  color: var(--color-F);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    line-height: 100%;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-F)
 }
 
 *:active,
@@ -67,416 +58,408 @@
 *:active,
 *:hover,
 *:focus {
-  outline: 0;
-  outline-offset: 0;
+    outline: 0;
+    outline-offset: 0
 }
 
 select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 a {
-  text-decoration: none;
-  cursor: pointer;
+    text-decoration: none;
+    cursor: pointer
 }
 
 ul {
-  list-style: none;
+    list-style: none
 }
 
 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
 }
 
 button {
-  font-family: "Roboto", sans-serif;
-  cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer
 }
 
 body {
-  background-color: var(--color-2024);
+    background-color: var(--color-2024)
 }
 
 html {
-  font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif
 }
 
 :root {
-  --color-F-ultraDim: rgba(255, 255, 255, 0.2);
-  --color-F-dim: rgba(255, 255, 255, 0.6);
-  --color-gray: #9d9d9d;
-  --color-F: #fff;
-  --color-2024: #202024;
-  --color-yellow-light: rgba(246, 200, 102, 0.9);
-  --color-yellow: #f6c866;
-  --color-yellow-dark: rgba(254, 173, 53, 0.9);
-  --color-green: rgba(50, 185, 73, 0.9);
-  --color-green-light: rgba(76, 217, 100, 0.9);
-  --color-red-err: #EE5353;
-  --anim-time: 2.5s;
-  --anim-timing-function: ease-in-out;
-  --rec-line: 0;
+    --color-F-ultraDim: rgba(255, 255, 255, 0.2);
+    --color-F-dim: rgba(255, 255, 255, 0.6);
+    --color-gray: #9d9d9d;
+    --color-F: #fff;
+    --color-2024: #202024;
+    --color-yellow-light: rgba(246, 200, 102, 0.9);
+    --color-yellow: #f6c866;
+    --color-yellow-dark: rgba(254, 173, 53, 0.9);
+    --color-green: rgba(50, 185, 73, 0.9);
+    --color-green-light: rgba(76, 217, 100, 0.9);
+    --color-red-err: #EE5353;
+    --anim-time: 2.5s;
+    --anim-timing-function: ease-in-out;
+    --rec-line: 0
 }
 
 .container-main {
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1920px
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 110px;
-  width: 100%;
-  max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 110px;
+    width: 100%;
+    max-width: 1440px
 }
 
 .question-title {
-  font-size: 25px;
-  color: var(--color-yellow);
+    font-size: 25px;
+    color: var(--color-yellow)
 }
 
 .question-title_up {
-  text-transform: uppercase;
-  line-height: 1.4;
+    text-transform: uppercase;
+    line-height: 1.4
 }
 
 .flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 .flex-col {
-  flex-direction: column;
+    flex-direction: column
 }
 
 .background-image {
-  width: 100%;
-  height: 100%;
-  border: none;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: transparent;
-  background-size: cover;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    background-size: cover
 }
 
 .btn {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 35px;
-  width: 310px;
-  height: 70px;
-  border: none;
-  border-radius: 50px;
-  font-size: 20px;
-  font-weight: 400;
-  color: var(--color-F);
-  background: linear-gradient(
-    90deg,
-    var(--color-yellow-light) -6.2%,
-    var(--color-yellow-dark) 100%
-  );
-  overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+    width: 310px;
+    height: 70px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-F);
+    background: linear-gradient(90deg, var(--color-yellow-light) -6.2%, var(--color-yellow-dark) 100%);
+    overflow: hidden
 }
 
 .select {
-  margin-bottom: 35px;
-  width: 310px;
-  height: 70px;
-  border: none;
-  border-radius: 50px;
-  font-size: 20px;
-  font-weight: 400;
-  color: var(--color-2024);
-  text-align: center;
-  text-align-last: center;
-  background: linear-gradient(
-    90deg,
-    rgba(228, 228, 228, 0.9) -6.2%,
-    rgba(203, 203, 203, 0.9) 100%
-  );
-  overflow: hidden;
+    margin-bottom: 35px;
+    width: 310px;
+    height: 70px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-2024);
+    text-align: center;
+    text-align-last: center;
+    background: linear-gradient(90deg, rgba(228, 228, 228, 0.9) -6.2%, rgba(203, 203, 203, 0.9) 100%);
+    overflow: hidden
 }
 
 .select_err {
-  border: 1px solid var(--color-red-err);
+    border: 1px solid var(--color-red-err)
 }
 
 .option {
-  border-radius: 50px;
-  color: var(--color-2024);
+    border-radius: 50px;
+    color: var(--color-2024)
 }
 
 .btn-gradient {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 155px;
-  height: 100%;
-  background: linear-gradient(
-    248.67deg,
-    rgba(255, 255, 255, 0) 30.84%,
-    rgba(255, 255, 255, 0.29) 46.06%,
-    rgba(255, 255, 255, 0) 64.04%
-  );
-  animation-name: btn-gradient-anim;
-  animation-duration: var(--anim-time);
-  animation-timing-function: var(--anim-timing-function);
-  animation-iteration-count: infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 155px;
+    height: 100%;
+    background: linear-gradient(248.67deg, rgba(255, 255, 255, 0) 30.84%, rgba(255, 255, 255, 0.29) 46.06%, rgba(255, 255, 255, 0) 64.04%);
+    animation-name: btn-gradient-anim;
+    animation-duration: var(--anim-time);
+    animation-timing-function: var(--anim-timing-function);
+    animation-iteration-count: infinite
 }
 
 .btn-gradient_second {
-  animation-name: btn-gradient-anim, btn-gradient-anim_second;
+    animation-name: btn-gradient-anim, btn-gradient-anim_second
 }
 
 .btn-gradient_third {
-  animation-name: btn-gradient-anim_three;
+    animation-name: btn-gradient-anim_three
 }
 
 .btn-gradient_fourth {
-  animation-name: btn-gradient-anim_four;
+    animation-name: btn-gradient-anim_four
 }
 
 .btn-gradient_call {
-  animation-name: btn-gradient-anim_call;
+    animation-name: btn-gradient-anim_call
 }
 
 @keyframes btn-gradient-anim {
-  0% {
-    left: -75px;
-    opacity: 0;
-  }
-  100% {
-    left: 310px;
-    opacity: 1;
-  }
+    0% {
+        left: -75px;
+        opacity: 0
+    }
+    100% {
+        left: 310px;
+        opacity: 1
+    }
 }
 
 @keyframes btn-gradient-anim_second {
-  0% {
-    left: -45px;
-  }
-  100% {
-    left: 310px;
-    opacity: 1;
-  }
+    0% {
+        left: -45px
+    }
+    100% {
+        left: 310px;
+        opacity: 1
+    }
 }
 
 @keyframes btn-gradient-anim_three {
-  0% {
-    left: -15px;
-    opacity: 0;
-  }
-  100% {
-    left: 310px;
-    opacity: 1;
-  }
+    0% {
+        left: -15px;
+        opacity: 0
+    }
+    100% {
+        left: 310px;
+        opacity: 1
+    }
 }
 
 @keyframes btn-gradient-anim_four {
-  0% {
-    left: 15px;
-    opacity: 0;
-  }
-  100% {
-    left: 310px;
-    opacity: 1;
-  }
+    0% {
+        left: 15px;
+        opacity: 0
+    }
+    100% {
+        left: 310px;
+        opacity: 1
+    }
 }
 
 @keyframes btn-gradient-anim_call {
-  0% {
-    left: -75px;
-    opacity: 0;
-  }
-  100% {
-    left: 400px;
-    opacity: 1;
-  }
+    0% {
+        left: -75px;
+        opacity: 0
+    }
+    100% {
+        left: 400px;
+        opacity: 1
+    }
 }
 
 .footnote {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.2;
-  letter-spacing: 0.1em;
-  color: var(--color-F-dim);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    color: var(--color-F-dim)
 }
 
 .off {
-  display: none;
+    display: none
 }
+
 
 /* Header */
 
 .header__container {
-  margin-bottom: 40px;
+    margin-bottom: 40px
 }
 
 .header__text_top {
-  padding-top: 35px;
-  padding-bottom: 20px;
-  margin-bottom: 12px;
-  width: 100%;
-  border-bottom: 1px solid var(--color-F-ultraDim);
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.2;
-  letter-spacing: 0.1em;
-  color: var(--color-F-dim);
+    padding-top: 35px;
+    padding-bottom: 20px;
+    margin-bottom: 12px;
+    width: 100%;
+    border-bottom: 1px solid var(--color-F-ultraDim);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    color: var(--color-F-dim)
 }
 
 .header__text_lower {
-  font-weight: 300;
-  font-size: 25px;
-  line-height: 1.16;
-  letter-spacing: 0.1em;
-  color: var(--color-F-dim);
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 1.16;
+    letter-spacing: 0.1em;
+    color: var(--color-F-dim)
 }
+
 
 /* Section-first-question */
 
 .section-first-question__background-image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  height: 1000px;
-  background-image: url("../img/main-page/first-question/back-flash.png");
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    height: 1000px;
+    background-image: url("../img/main-page/first-question/back-flash.png")
 }
 
 .section-first-question__image {
-  position: relative;
-  width: 380px;
-  height: 380px;
+    position: relative;
+    width: 380px;
+    height: 380px
 }
 
 .section-first-question__image_eye {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0.2
 }
 
 .section-first-question__image_woman {
-  position: relative;
-  z-index: 1;
-  border-radius: 50%;
-  padding: 70px;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    padding: 70px
 }
 
 .section-first-question__title {
-  width: 500px;
-  margin-bottom: 40px;
+    width: 500px;
+    margin-bottom: 40px
 }
+
 
 /* Section-cards */
 
 .section-cards__first-card {
-  position: relative;
-  padding: 130px 38px 85px;
-  margin-bottom: 70px;
-  width: 445px;
-  height: 435px;
-  border: 1px solid #ffffff;
-  border-radius: 3px;
+    position: relative;
+    padding: 130px 38px 85px;
+    margin-bottom: 70px;
+    width: 445px;
+    height: 435px;
+    border: 1px solid #ffffff;
+    border-radius: 3px
 }
 
 .section-cards__first-card-image {
-  position: absolute;
-  top: -67.5px;
-  width: 135px;
-  height: 135px;
-  border-radius: 50%;
+    position: absolute;
+    top: -67.5px;
+    width: 135px;
+    height: 135px;
+    border-radius: 50%
 }
 
 .section-cards__second-card {
-  position: relative;
-  width: 100%;
-  height: 606px;
+    position: relative;
+    width: 100%;
+    height: 606px
 }
 
 .section-cards__second-card-image {
-  background-image: url("../img/main-page/cards/card-2-woman.jpg");
-  opacity: 0.2;
+    background-image: url("../img/main-page/cards/card-2-woman.jpg");
+    opacity: 0.2
 }
 
 .section-cards__card-text {
-  line-height: 1.4;
+    line-height: 1.4
 }
 
 .section-cards__card-text_mark {
-  color: var(--color-yellow);
+    color: var(--color-yellow)
 }
 
 .section-cards__second-card-text {
-  position: absolute;
-  padding-top: 50px;
-  width: 380px;
+    position: absolute;
+    padding-top: 50px;
+    width: 380px
 }
+
 
 /* Section-second-question */
 
 .section-second-question__title {
-  margin-bottom: 45px;
+    margin-bottom: 45px
 }
+
 
 /* Footer */
 
 .footer__container {
-  position: relative;
-  margin-bottom: 0;
+    position: relative;
+    margin-bottom: 0
 }
 
 .footer__rune {
-  width: 55px;
-  height: 17px;
-  background-size: contain;
+    width: 55px;
+    height: 17px;
+    background-size: contain
 }
 
 .footer__rune_up {
-  margin-bottom: 80px;
-  background-image: url("../img/main-page/footer/runes-up.svg");
+    margin-bottom: 80px;
+    background-image: url("../img/main-page/footer/runes-up.svg")
 }
 
 .footer__rune_lower {
-  margin-bottom: 150px;
-  background-image: url("../img/main-page/footer/runes-lower.svg");
+    margin-bottom: 150px;
+    background-image: url("../img/main-page/footer/runes-lower.svg")
 }
 
 .footer__text {
-  margin-bottom: 80px;
-  width: 300px;
-  line-height: 1.4;
-  font-family: "BadScript";
+    margin-bottom: 80px;
+    width: 300px;
+    line-height: 1.4;
+    font-family: "BadScript"
 }
 
 .footer__back-moon {
-  position: absolute;
-  bottom: 50px;
-  left: -40px;
-  width: 160px;
-  height: 160px;
-  background-image: url("../img/main-page/footer/back-moon.svg");
+    position: absolute;
+    bottom: 50px;
+    left: -40px;
+    width: 160px;
+    height: 160px;
+    background-image: url("../img/main-page/footer/back-moon.svg")
 }
 
 .footer__back-eye {
-  position: absolute;
-  bottom: 350px;
-  right: -125px;
-  width: 300px;
-  height: 155px;
-  background-image: url("../img/main-page/footer/back-eye.svg");
+    position: absolute;
+    bottom: 350px;
+    right: -125px;
+    width: 300px;
+    height: 155px;
+    background-image: url("../img/main-page/footer/back-eye.svg")
 }
