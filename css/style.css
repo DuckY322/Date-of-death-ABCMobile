@@ -127,7 +127,7 @@ html {
     justify-content: center;
     margin: 0 auto 110px;
     width: 100%;
-    max-width: 1440px
+    max-width: 1440px;
 }
 
 .question-title {
@@ -246,7 +246,7 @@ html {
         left: -45px
     }
     100% {
-        left: 310px;
+        left: 325px;
         opacity: 1
     }
 }
@@ -257,7 +257,7 @@ html {
         opacity: 0
     }
     100% {
-        left: 310px;
+        left: 340px;
         opacity: 1
     }
 }
@@ -268,7 +268,7 @@ html {
         opacity: 0
     }
     100% {
-        left: 310px;
+        left: 355px;
         opacity: 1
     }
 }
@@ -420,7 +420,8 @@ html {
 
 .footer__container {
     position: relative;
-    margin-bottom: 0
+    margin-bottom: 0;
+    overflow: hidden;
 }
 
 .footer__rune {
@@ -457,9 +458,19 @@ html {
 
 .footer__back-eye {
     position: absolute;
-    bottom: 350px;
+    top: 0;
     right: -125px;
     width: 300px;
     height: 155px;
     background-image: url("../img/main-page/footer/back-eye.svg")
+}
+
+.footer__warn-text {
+    padding: 0 13px;
+    width: 294px;
+    font-size: 7px;
+    line-height: 1.285;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--color-gray);
 }

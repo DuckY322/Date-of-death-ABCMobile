@@ -1,13 +1,179 @@
-@media(min-width: 1400px) and (max-width: 1919px) {}
-
-@media(min-width: 1200px) and (max-width: 1399px) {}
-
-@media(min-width: 1024px) and (max-width: 1199px) {}
-
-@media(min-width: 992px) and (max-width: 1023px) {}
-
-@media(min-width: 768px) and (max-width: 991px) {}
-
-@media(min-width: 576px) and (max-width: 767px) {}
-
-@media(min-width: 50px) and (max-width: 575px) {}
+@media(min-width: 50px) and (max-width: 575px) {
+    .container {
+        margin: 0 auto 55px;
+    }
+    .question-title {
+        font-size: 16px;
+        line-height: 1.5625;
+    }
+    .question-title_up {
+        text-transform: uppercase;
+        line-height: 1.5625
+    }
+    .btn {
+        margin-bottom: 20px;
+        width: 180px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .select {
+        margin-bottom: 20px;
+        width: 180px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .btn-gradient {
+        width: 87px;
+    }
+    @keyframes btn-gradient-anim {
+        0% {
+            left: -45px;
+            opacity: 0
+        }
+        100% {
+            left: 280px;
+            opacity: 1
+        }
+    }
+    @keyframes btn-gradient-anim_second {
+        0% {
+            left: -30px
+        }
+        100% {
+            left: 295px;
+            opacity: 1
+        }
+    }
+    @keyframes btn-gradient-anim_three {
+        0% {
+            left: -15px;
+            opacity: 0
+        }
+        100% {
+            left: 210px;
+            opacity: 1
+        }
+    }
+    @keyframes btn-gradient-anim_four {
+        0% {
+            left: 0px;
+            opacity: 0
+        }
+        100% {
+            left: 225px;
+            opacity: 1
+        }
+    }
+    @keyframes btn-gradient-anim_call {
+        0% {
+            left: -45px;
+            opacity: 0
+        }
+        100% {
+            left: 450px;
+            opacity: 1
+        }
+    }
+    .footnote {
+        font-size: 12px;
+        line-height: 1.1666;
+    }
+    /* Header */
+    .header__text_top {
+        padding-top: 21px;
+        padding-bottom: 11px;
+        margin-bottom: 7px;
+        font-size: 12px;
+        line-height: 1.1666;
+    }
+    .header__text_lower {
+        font-size: 20px;
+        line-height: 1.15;
+    }
+    /* Section-first-question */
+    .section-first-question__background-image {
+        height: 600px;
+    }
+    .section-first-question__image {
+        width: 225px;
+        height: 225px;
+    }
+    .section-first-question__image_woman {
+        padding: 45px
+    }
+    .section-first-question__title {
+        width: 288px;
+        margin-bottom: 23px
+    }
+    /* Section-cards */
+    .section-cards__first-card {
+        position: relative;
+        padding: 58px 22px 32px;
+        margin-bottom: 40px;
+        width: 255px;
+        height: 252px;
+    }
+    .section-cards__first-card-image {
+        top: -39px;
+        width: 78px;
+        height: 78px;
+    }
+    .section-cards__second-card {
+        height: 331px
+    }
+    .section-cards__card-text {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5625
+    }
+    .section-cards__card-text_mark {
+        font-size: 20px;
+        line-height: 1.25;
+    }
+    .section-cards__second-card-text {
+        padding-top: 20px;
+        width: 219px
+    }
+    /* Section-second-question */
+    .section-second-question__title {
+        margin-bottom: 27px
+    }
+    /* Footer */
+    .footer__container {
+        margin-bottom: 0;
+    }
+    .footer__rune {
+        width: 32px;
+        height: 10px;
+    }
+    .footer__rune_up {
+        margin-bottom: 37px;
+    }
+    .footer__rune_lower {
+        margin-bottom: 97px;
+    }
+    .footer__text {
+        margin-bottom: 33px;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    .footer__back-moon {
+        bottom: 70px;
+        left: -12.5px;
+        width: 50px;
+        height: 50px;
+    }
+    .footer__back-eye {
+        right: -30px;
+        width: 84px;
+        height: 44px;
+    }
+    .footer__warn-text {
+        width: 100%;
+        transform: translateY(8px);
+        transition: transform 0.5s var(--anim-timing-function);
+    }
+    .footer__warn-text:hover {
+        transform: translateY(0);
+    }
+}

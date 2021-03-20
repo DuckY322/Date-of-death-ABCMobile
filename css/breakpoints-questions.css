@@ -1,0 +1,9 @@
+@media(min-width: 50px) and (max-width: 575px) {
+    .section-call__btn {
+        width: 238px;
+        height: 48px;
+        font-weight: 400;
+        line-height: 1.15;
+        background: linear-gradient( 90deg, var(--color-green-light) -6.2%, var(--color-green) 100%);
+    }
+}
