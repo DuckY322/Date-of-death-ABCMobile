@@ -127,9 +127,4 @@
         line-height: 1.15;
         background: linear-gradient( 90deg, var(--color-green-light) -6.2%, var(--color-green) 100%);
     }
-    /* .footer__container {
-        position: absolute;
-        bottom: 0;
-        height: 27px;
-    } */
 }
