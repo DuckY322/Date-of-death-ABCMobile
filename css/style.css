@@ -450,7 +450,7 @@ html {
 .footer__back-moon {
     position: absolute;
     bottom: 50px;
-    left: -40px;
+    left: 0;
     width: 160px;
     height: 160px;
     background-image: url("../img/main-page/footer/back-moon.svg")
@@ -459,7 +459,7 @@ html {
 .footer__back-eye {
     position: absolute;
     top: 0;
-    right: -125px;
+    right: 0px;
     width: 300px;
     height: 155px;
     background-image: url("../img/main-page/footer/back-eye.svg")
@@ -473,4 +473,10 @@ html {
     letter-spacing: 3px;
     text-transform: uppercase;
     color: var(--color-gray);
+    transform: translateY(8px);
+    transition: transform 0.5s var(--anim-timing-function);
+}
+
+.footer__warn-text:hover {
+    transform: translateY(0);
 }

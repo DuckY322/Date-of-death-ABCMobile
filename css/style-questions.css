@@ -227,12 +227,9 @@
 /* Footer */
 
 .footer__container {
-    /* position: relative; */
-    height: 55px;
-    overflow: hidden;
-}
-
-.footer__warn-text {
     position: absolute;
     bottom: 0;
+    left: calc(50% - (294px / 2));
+    width: 294px;
+    height: 27px;
 }
