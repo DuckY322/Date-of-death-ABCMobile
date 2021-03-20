@@ -216,4 +216,17 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         })
     });
+
+    document.querySelector(".section-call__btn").addEventListener("click", function() {
+        const request = new XMLHttpRequest();
+        const url = "https://swapi.dev/api/people/1/";
+        request.open("GET", url);
+        request.setRequestHeader('Content-Type', 'application/x-www-form-url');
+        request.addEventListener("readystatechange", () => {
+            if (request.readyState === 4 && request.status === 200) {
+                console.log(request.responseText);
+            }
+        });
+        request.send();
+    });
 });
