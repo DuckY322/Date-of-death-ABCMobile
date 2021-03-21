@@ -100,9 +100,6 @@
         border: 1px solid var(--color-F);
         font-size: 16px;
     }
-    .section-call__event-text {
-        font-weight: 700;
-    }
     .section-call__do {
         margin-bottom: 21px;
         width: 233px;

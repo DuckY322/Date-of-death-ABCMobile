@@ -210,6 +210,10 @@
     border: 1px solid var(--color-F);
 }
 
+.section-call__event-text {
+    font-weight: 700;
+}
+
 .section-call__do {
     margin-bottom: 35px;
     width: 469px;
