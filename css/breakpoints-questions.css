@@ -3,8 +3,7 @@
     .header__container {
         padding: 22px 30px 16px;
         margin-bottom: 36px;
-        height: 124px;
-        max-height: 124px;
+        min-height: 124px;
         overflow: hidden;
     }
     .header__text {
@@ -29,33 +28,25 @@
         color: var(--color-2024);
     }
     .header__back-eye {
-        position: absolute;
         bottom: 5px;
         right: -25px;
         width: 84px;
         height: 44px;
-        background-image: url("../img/main-page/footer/back-eye.svg");
     }
     /* Section-question */
     .section-question__container {
-        margin-bottom: 0;
+        margin: 0;
     }
     .section-question__title {
         margin-bottom: 40px;
-        width: 258px;
+        width: 302px;
     }
     .section-question__buttons {
-        margin-bottom: 0;
-    }
-    .footnote {
-        position: absolute;
-        margin-bottom: 0;
-        bottom: 46px;
+        margin-bottom: 95px;
     }
     .section-question__back-moon {
-        position: absolute;
         bottom: 35px;
-        left: 13px;
+        left: -13px;
         width: 52px;
         height: 52px;
     }

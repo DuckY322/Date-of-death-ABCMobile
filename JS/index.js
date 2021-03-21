@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             } else {
                 buttons[i].style.display = "flex";
-                buttons[i].textContent = questions[responses].answers[i];
+                buttons[i].innerHTML = questions[responses].answers[i] + "<div class='btn-gradient'></div>";
             }
         }
 

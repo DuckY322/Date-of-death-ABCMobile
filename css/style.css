@@ -214,25 +214,13 @@ html {
     animation-iteration-count: infinite
 }
 
-.btn-gradient_second {
-    animation-name: btn-gradient-anim, btn-gradient-anim_second
-}
-
-.btn-gradient_third {
-    animation-name: btn-gradient-anim_three
-}
-
-.btn-gradient_fourth {
-    animation-name: btn-gradient-anim_four
-}
-
 .btn-gradient_call {
-    animation-name: btn-gradient-anim_call
+    animation-name: btn-gradient-anim-call;
 }
 
 @keyframes btn-gradient-anim {
     0% {
-        left: -75px;
+        left: -155px;
         opacity: 0
     }
     100% {
@@ -241,41 +229,9 @@ html {
     }
 }
 
-@keyframes btn-gradient-anim_second {
+@keyframes btn-gradient-anim-call {
     0% {
-        left: -45px
-    }
-    100% {
-        left: 325px;
-        opacity: 1
-    }
-}
-
-@keyframes btn-gradient-anim_three {
-    0% {
-        left: -15px;
-        opacity: 0
-    }
-    100% {
-        left: 340px;
-        opacity: 1
-    }
-}
-
-@keyframes btn-gradient-anim_four {
-    0% {
-        left: 15px;
-        opacity: 0
-    }
-    100% {
-        left: 355px;
-        opacity: 1
-    }
-}
-
-@keyframes btn-gradient-anim_call {
-    0% {
-        left: -75px;
+        left: -155px;
         opacity: 0
     }
     100% {
