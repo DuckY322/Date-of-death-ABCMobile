@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         let dateOfBirth = Math.round((new Date() - new Date(user.dateOfBirth.year, user.dateOfBirth.month - 1, user.dateOfBirth.day)) / 1000 / 60 / 60 / 24 / 30 / 12);
 
-        if (dateOfBirth >= 18 && dateOfBirth <= 35) {
+        if (dateOfBirth <= 35) {
             document.querySelector(".header__text_white").textContent = questions[responses].description[0];
         } else if (dateOfBirth >= 36 && dateOfBirth <= 45) {
             document.querySelector(".header__text_white").textContent = questions[responses].description[1];

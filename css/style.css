@@ -189,6 +189,7 @@ html {
     text-align: center;
     text-align-last: center;
     background: linear-gradient(90deg, rgba(228, 228, 228, 0.9) -6.2%, rgba(203, 203, 203, 0.9) 100%);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden
 }
 
